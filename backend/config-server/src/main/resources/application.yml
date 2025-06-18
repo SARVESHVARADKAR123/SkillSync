@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: native
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          # Adjust the path so it points to your config-repo folder:
+          search-locations: file:config-repo
+
+server:
+  port: 8888
